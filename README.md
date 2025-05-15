@@ -84,15 +84,27 @@ print(response)
 
 ## 🗂️ Example Workflow
 
-```mermaid
-graph 
-
-A[User Query] --> B[Llama Model (llama-cpp-python)]
-B --> C{Function Call?}
-C -- Yes --> D[Parse & Execute Function]
-D --> E[Return Tool Result]
-E --> B
-C -- No --> F[Final Answer]
+```
+User Query
+   |
+   v
+Llama Model (llama-cpp-python)
+   |
+   v
+Is Function Call Needed?
+   |         \
+  Yes         No
+   |           \
+   v            v
+Parse &     Final Answer
+Execute
+Function
+   |
+   v
+Return Tool Result
+   |
+   v
+(loop back to Llama Model)
 ```
 
 ---
