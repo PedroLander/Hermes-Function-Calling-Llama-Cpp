@@ -1,0 +1,17 @@
+*
+!chat_templates/
+!examples/
+!files.txt
+!functioncall.py
+!functions.py
+!icons/
+!jsonmode.py
+!LICENSE
+!prompt_assets/
+!prompter.py
+!README.md
+!requirements.txt
+!schema.py
+!template_tests/
+!utils.py
+!validator.py
