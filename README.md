@@ -84,7 +84,7 @@ print(response)
 
 ## 🗂️ Example Workflow
 
- ```mermaid graph TD A[User Query] --> B[Llama Model (llama-cpp-python)] B --> C{Function Call?} C -- Yes --> D[Parse & Execute Function] D --> E[Return Tool Result] E --> B C -- No --> F[Final Answer] ```
+<pre> ```mermaid graph TD A[User Query] --> B[Llama Model (llama-cpp-python)] B --> C{Function Call?} C -- Yes --> D[Parse & Execute Function] D --> E[Return Tool Result] E --> B C -- No --> F[Final Answer] ``` </pre>
 
 ---
 
